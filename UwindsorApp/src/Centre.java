@@ -2,7 +2,8 @@ public class Centre {
     private String location;
     private String name;
 
-    public void setLocation(String alocation, String aname){
+
+    public Centre(String alocation, String aname){
         location = alocation;
         name = aname;
     }
@@ -13,5 +14,11 @@ public class Centre {
         name=aName;
     }
 
+    public String getLocation(){
+        return location;
+    }
 
+    public String getName(){
+        return name;
+    }
 }
