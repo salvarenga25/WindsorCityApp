@@ -5,7 +5,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class JDBConnection {
+public class JDBConnection { //this class  is only for testing the connection between java and Oracle db
 
     public static void main(String[] args) {
 
@@ -22,7 +22,7 @@ public class JDBConnection {
         // Oracle SID = orcl , find yours in tnsname.ora
 
         try (Connection conn = DriverManager.getConnection(
-                "jdbc:oracle:thin:@10.176.1.94:1521:Doable", "sys as sysdba", "Oracle_1")) {
+                "jdbc:oracle:thin:@anip:1521:orcl", "user", "password")) { //these fields are hidden for protection of my db -Salvador
 
             if (conn != null) {
                 System.out.println("Connected to the database!");
@@ -31,7 +31,6 @@ public class JDBConnection {
             }
           Statement stmt=conn.createStatement(); 
           ResultSet rs = stmt.executeQuery("Select * from T_PRI_F1DRIVERS");
-          System.out.println("Driver ID\t First Name\t Last Name\t Championships\n");
           while(rs.next()){
               System.out.println(rs.getInt(1)+ "\t\t "+rs.getString(2)+"\t "+rs.getString(3)+"\t "+rs.getInt(4));
           }
