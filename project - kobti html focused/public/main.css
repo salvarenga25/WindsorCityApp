@@ -141,7 +141,7 @@ nav a:hover::before{
    
     text-align:center;
 
-  margin:5px;  /* and that, will result in a 10px gap */
+    margin:5px;  /* and that, will result in a 10px gap */
 }
 
 #container1 > div{
@@ -151,7 +151,7 @@ nav a:hover::before{
 #details{
     display:flex;
     justify-content: space-evenly;
-    background-color:beige;
+    background-color:#DAD4EF;
 }
 
 #details .info-box{
@@ -161,7 +161,7 @@ nav a:hover::before{
     padding:10px;
 }
 #details .info-box img{
-    background-color: beige;
+    background-color: #DAD4EF;
     color:beige;
 }
 #details .info-box p{
@@ -197,7 +197,7 @@ footer{
 
 .navbar2 {
   width: 100%;
-  background-color: #555;
+  background-color: #B9A394;
   overflow: auto;
 }
 .navbar2 h3{
@@ -207,26 +207,28 @@ footer{
 .navbar2 a {
   float: left;
   padding: 12px;
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 17px;
-  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  width: 22%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
   text-align: center; /* If you want the text to be centered */
 }
 
 /* Add a background color on mouse-over */
 .navbar2 a:hover {
-  background-color: #000;
+  background-color: #8B4513;
 }
 
 /* Style the current/active link */
 .navbar2 a.active {
   background-color: #8B4513;
+    color: aliceblue;
 }
 .p_adresses{
     margin-top: 60px;
-    margin-left: 20px;
-    
+    margin-left: 20px;   
 }
+
+/*Garbage Collection*/
 
 
