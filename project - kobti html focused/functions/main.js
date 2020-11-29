@@ -110,3 +110,9 @@ closeNav.addEventListener("click", (e) => {
     document.getElementById("nav").style.width = "0";
     document.getElementById("main").style.marginleft = "";
 })
+
+
+
+
+
+

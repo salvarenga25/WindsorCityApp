@@ -20,6 +20,10 @@ header::after {
     display:table;
     clear:both;
 }
+header .highlight, header .current a{
+    color:antiquewhite;
+    font-weight: bold;
+}
 
 .logo{
     height: 80px;
@@ -75,38 +79,154 @@ nav a::before {
 nav a:hover::before{
     width: 100%;
 }
+#map-showcase{
+    margin-bottom: 5px;
+    /*background: url(https://www.citywindsor.ca/residents/Facilities-for-Rent/PublishingImages/Forest%20Glade%20-%20Website%20Picture.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;*/
+}
+#map-showcase h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom:10px;
+}
+
+#map-showcase h2{
+    margin-bottom: 5px;
+    
+}
+
+#googleMap{
+    border: solid 5px;
+    border-color: black;
+    padding:0;
+    margin:0px;
+    
+}
 
 
 
+#subscribe{
+    padding:15px;
+    background-color: #3579DC;    
+}
+#subscribe h1{
+    margin-left: -14px;
+}
 
+#subscribe form{
+    float:right;
+    margin-top:-50px;
+}
 
+#subscribe input[type="email"]{
+    padding:4px;
+    height:25px;
+    width:350px;
+}
 
-/*.toggler{
+.button_1{
+    height:38px;
+    background: ;
+    border:none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+}
+.container1{
+    margin:30px;
+    display:flex;
+    flex-direction:row;
+    flex:1 1 auto;
+   
+    text-align:center;
+
+  margin:5px;  /* and that, will result in a 10px gap */
+}
+
+#container1 > div{
+    
+}
+
+#details{
+    display:flex;
+    justify-content: space-evenly;
+    background-color:beige;
+}
+
+#details .info-box{
+    float: left;
+    text-align: center;
+    width:30%;
     padding:10px;
-    background:rgb(121,121,121);
 }
-#openNav{
-    border: 1px solid #eee;
-    padding: 10px;
-    border-radius: 4px;
-    color: #eee;
-    font-weight: bold;
-    background: rgb(61,61,61);
-    cursor: pointer;
+#details .info-box img{
+    background-color: beige;
+    color:beige;
 }
-
-
-nav{
-    background:#eee;
+#details .info-box p{
+    font-size: 20px;
+}
+footer{
+    background-color: #3579DC;
+    text-align: center;
+    padding:20px;
 }
 
-header{
-   text-align: center; 
+
+/* trial for boxed information
+#information-boxes{
+    display: inline;
+}
+#information-boxes .info-box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding:10px;
+     
 }
 
-h1{
-    text-decoration: underline;
+#information-boxes .info-box img{
+    width:150px;
+    height: 150px;
+    
 }
-
 */
+
+/* Parking Lot CSS*/
+
+.navbar2 {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+.navbar2 h3{
+    text-align: left;
+}
+/* Navigation links */
+.navbar2 a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar2 a:hover {
+  background-color: #000;
+}
+
+/* Style the current/active link */
+.navbar2 a.active {
+  background-color: #8B4513;
+}
+.p_adresses{
+    margin-top: 60px;
+    margin-left: 20px;
+    
+}
+
 

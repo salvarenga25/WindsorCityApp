@@ -1,3 +1,16 @@
+<?php
+    $db = "(DESCRIPTION=(ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = 10.176.1.94)(PORT = 8080)))(CONNECT_DATA=(SID=Doable)))" ;
+    if($c = OCILogon("sys as sysdba", "Oracle_1", $db))
+    {
+        echo "Successfully connected to Oracle.\n";
+        OCILogoff($c);
+    }
+    else
+    {
+        $err = OCIError();
+        echo "Connection failed." . $err[text];
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +18,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./public/main.css" type ="text/css"/>
-     <script src="https://maps.googleapis.com/maps/api/js?AIzaSyCCqD1RqN6Egitjz8XVRZW021qX_VbkiSI&callback=myMap"></script>
     <title>CoW Web-Based App</title>
 </head>
     
@@ -35,14 +47,14 @@
             <img src="https://www.citywindsor.ca/residents/Culture/PublishingImages/City%20Logo%20-%201%20Colour%20-%20White%20-%20JPEG.jpg" alt="logo" class="logo">
             
             <nav>
-             <ul>
-                <li><a href= "main.html"> Main</a></li>
-                <li><a href= "communityCentre.html"> Community Centres</a></li>
-                <li><a href= "parkingLots.html"> Parking Lots</a></li>
-                <li><a href= "garbageCollection.html"> Garbage Collection</a></li>
-                <li><a href= "busRoutes.html"> Bus Routes</a></li>
-                <li><a href= "specialEvents.html"> Special Events</a></li>
-                <li><a href= "other.html"> Other</a></li>
+            <ul>
+                <li><a href= "#"> Main</a></li>
+                <li><a href= "#"> Community Centres</a></li>
+                <li><a href= "#"> Parking Lots</a></li>
+                <li><a href= "#"> Garbage Collection</a></li>
+                <li><a href= "#"> Bus Routes</a></li>
+                <li><a href= "#"> Special Events</a></li>
+                <li><a href= "#"> Other</a></li>
                 
             </ul>
             </nav>
@@ -50,26 +62,7 @@
             
         </div>
         </header>
-     <section id = "showcase">
-    <div class = "container">
-        <h1> Main Menu</h1>
-        <h1>Locate our Community Centres!</h1>
-
-<div id="googleMap" style="width:100%;height:600px;"></div>
-
-<script>
-function myMap() {
-var mapProp= {
-  center:new google.maps.LatLng(42.3149,-83.0364),
-  zoom:14,
-};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?AIzaSyCCqD1RqN6Egitjz8XVRZW021qX_VbkiSI&callback=myMap"></script>
-        </div>
-    </section>
+     
     
 <!--   
     <h1>CoW Information App</h1>
