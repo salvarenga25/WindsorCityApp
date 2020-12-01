@@ -16,7 +16,7 @@ public class MyDb {
    public Connection getCon() throws SQLException {
      
        
-     
+     //attempting to add the driver to connect to the database (this one comes from the library ojdbc8.jar)
             try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
             } catch (ClassNotFoundException e) {
@@ -24,7 +24,7 @@ public class MyDb {
             }
       
             
-      Connection  conn = DriverManager.getConnection("jdbc:oracle:thin:@10.176.1.94:1521:Doable","sys as sysdba","Oracle_1");
+      Connection  conn = DriverManager.getConnection("jdbc:oracle:thin:@HOST:orcl","username","password");//parameters have been deleted for security reasons
             
 
             
