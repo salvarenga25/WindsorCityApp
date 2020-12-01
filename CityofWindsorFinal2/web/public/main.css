@@ -1,0 +1,465 @@
+body{
+    background: #F5F5F5;
+    padding:0px;
+    margin:0px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto; 
+}
+
+header {
+    background: #3579DC	;
+}
+
+header::after {
+    content:'';
+    display:table;
+    clear:both;
+}
+header .highlight, header .current a{
+    color:antiquewhite;
+    font-weight: bold;
+}
+
+.logo{
+    height: 80px;
+    float:left;
+    padding: 10px 0;
+    margin-left: -180px;
+}
+
+nav{
+    float:right;
+}
+
+nav ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 43px;
+    
+    position: relative;
+}
+
+
+nav ul > li> a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17.7px;
+    font-weight: bold;
+}
+
+nav ul > li> a:hover{
+    color: #000;
+}
+
+
+nav a::before {
+    content:"";
+    display: block;
+    height: 10px;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top:25px;
+    width:0%;
+    transition: all ease-in 250ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+#map-showcase h2{
+    font-weight: bolder;
+    font-size: 30px;
+    
+}
+#map-showcase{
+    margin-bottom: 5px;
+    /*background: url(https://www.citywindsor.ca/residents/Facilities-for-Rent/PublishingImages/Forest%20Glade%20-%20Website%20Picture.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;*/
+}
+#map-showcase h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom:10px;
+}
+
+#map-showcase h2{
+    margin-bottom: 5px;
+    
+}
+
+#googleMap{
+    border: solid 5px;
+    border-color: black;
+    padding:0;
+    margin:0px;
+    
+}
+
+
+
+#subscribe{
+    padding:15px;
+    background-color: #3579DC;    
+}
+#subscribe h1{
+    margin-left: -14px;
+}
+
+#subscribe form{
+    float:right;
+    margin-top:-50px;
+    
+}
+
+#subscribe input[type="email"]{
+    padding:4px;
+    height:25px;
+    width:350px;
+}
+#subscribe input[type="username"]{
+    margin-right: 500px;
+    padding:4px;
+    height:25px;
+    width:350px;
+}
+
+.button_1{
+    height:38px;
+    background: ;
+    border:none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+}
+.container1{
+    margin:30px;
+    display:flex;
+    flex-direction:row;
+    flex:1 1 auto;
+   
+    text-align:center;
+
+    margin:5px;  /* and that, will result in a 10px gap */
+}
+
+#container1 > div{
+    
+}
+
+#details{
+    display:flex;
+    justify-content: space-evenly;
+    background-color:#DAD4EF;
+}
+
+#details .info-box{
+    float: left;
+    text-align: center;
+    width:30%;
+    padding:10px;
+}
+#details .info-box img{
+    background-color: #DAD4EF;
+    color:beige;
+}
+#details .info-box p{
+    font-size: 20px;
+}
+footer{
+    background-color: #3579DC;
+    text-align: center;
+    padding:20px;
+}
+
+
+/* trial for boxed information
+#information-boxes{
+    display: inline;
+}
+#information-boxes .info-box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding:10px;
+     
+}
+
+#information-boxes .info-box img{
+    width:150px;
+    height: 150px;
+    
+}
+*/
+
+/* Parking Lot CSS*/
+
+.navbar2 {
+  width: 100%;
+  background-color: #B9A394;
+  overflow: auto;
+}
+.navbar2 h3{
+    text-align: left;
+}
+/* Navigation links */
+.navbar2 a {
+  float: left;
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  width: 22%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar2 a:hover {
+  background-color: #8B4513;
+}
+
+/* Style the current/active link */
+.navbar2 a.active {
+  background-color: #8B4513;
+    color: aliceblue;
+}
+.p_adresses{
+    margin-top: 60px;
+    margin-left: 20px;   
+}
+
+/*Garbage Collection*/
+
+#subscribeG{
+    padding:15px;
+    background-color: #3579DC;    
+}
+#subscribeG h1{
+    margin-left: -14px;
+}
+
+#subscribeG form{
+    float:right;
+    margin-top:-50px;
+    margin-right: -230px;
+    
+}
+
+#subscribeG input[type="email"]{
+    padding:4px;
+    height:25px;
+    width:350px;
+}
+#subscribeG input[type="username"]{
+    margin-right: 500px;
+    padding:4px;
+    height:25px;
+    width:350px;
+    margin-right:480px;
+}
+
+.button_1{
+    height:38px;
+    background: ;
+    border:none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+}
+
+#calendar{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: baseline;
+    flex-flow: row nowrap;
+    
+}
+#fullCal{ /*full section positioning*/ 
+}
+
+#calendar ul{ /*calendar positioning*/
+    margin:0;
+    padding:0;
+}
+
+#calendar li{   /*main calendar block, consists of all day elements*/
+    float:left;
+    display: block;
+    width: 14.2857%;
+    height: 100px;
+    text-align: center;
+    list-style-type: none;
+    font-size: 25px;
+}
+
+#calendar li:nth-child(n+1):nth-child(-n+7) { /* colors of the top da */
+  font-weight: 900;
+  color: #DB8A74;
+}
+
+#calendar li:nth-child(n+38), li:nth-child(n+8):nth-child(-n+7) { /*greys out non existed days within the calendar*/
+  font-weight: 900;
+  color: rgba(0,0,0,.3);
+}
+
+#calendar li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(26){
+  border-radius: 5px;
+  background-color: #8B4513;
+  color: #ecf0f1;
+}
+
+/*Transit routes*/
+#subscribeB{
+    padding:15px;
+    background-color: #3579DC;    
+}
+#subscribeB h1{
+    margin-left: -14px;
+}
+
+#subscribeB form{
+    float:right;
+    margin-top:-50px;
+    margin-right: -230px;
+    
+}
+
+#subscribeB input[type="email"]{
+    padding:4px;
+    height:25px;
+    width:350px;
+}
+#subscribeB input[type="username"]{
+    margin-right: 500px;
+    padding:4px;
+    height:25px;
+    width:350px;
+}
+
+.button_1{
+    height:38px;
+    background: ;
+    border:none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+}
+
+/* Main */
+#contentHeader h1{
+    background-color:#DAD4EF;
+    text-align: center; ;
+    margin:0px;
+    padding:10px;
+    padding-right:200px;
+}
+
+/*Other*/
+#main form{
+    text-align: center;
+}
+#main form p{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+} 
+
+#main input[type="text"]{
+    padding:4px;
+    height:25px;
+    width:350px;
+}
+#main input[type="content"]{
+    padding:4px;
+    height:25px;
+    width:350px;
+}
+#main input[type="file"]{
+    font-size: 20px;
+    margin-left: 20px;
+}
+#main input[type="submit"]{
+    font-weight: bolder;
+    font-size: 25px;
+    height:38px;
+    border: solid 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-top: 4px;
+    color: black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-left: -100px;
+}
+
+#main textarea{
+    margin-bottom: -14px;
+    padding:4px;
+    height:25px;
+    width:350px;
+}
+
+#progressHandler{
+    text-align: center;
+    margin-bottom:15px ;
+}
+
+#progressHandler p{
+    font-size:25px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#main progress{
+    height: 40px;
+    width:1300px;
+}
+
+#createPostH h1{
+   margin-top: -.5px;
+}
+
+/*community centre tables*/ 
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+    font-size: 22px;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#subscribe h2{
+    text-align: center;
+    font-size: 44px;
+    text-decoration:underline 
+}
+
+
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/main.css" type ="text/css"/>
+    <script src="https://maps.googleapis.com/maps/api/js?AIzaSyCCqD1RqN6Egitjz8XVRZW021qX_VbkiSI&callback=myMap"></script>
+    <title>CoW Web-Based App</title>
+</head>
+    
+    
+<body>
+    <div id="wrapper"> 
+    <header>
+        <div class="container"> 
+        
+            <img src="https://www.citywindsor.ca/residents/Culture/PublishingImages/City%20Logo%20-%201%20Colour%20-%20White%20-%20JPEG.jpg" alt="logo" class="logo">
+            
+           <nav>
+             <ul>
+                <li><a href= "http://10.176.1.149:58394/CityofWindsorFinal2/Main.html"> Main</a></li>
+                <li class="current"><a href= "http://10.176.1.149:58394/CityofWindsorFinal2/CommunityCentre.html"> Community Centres</a></li>
+                <li><a href= "http://10.176.1.149:58394/CityofWindsorFinal2/ParkingLots.html"> Parking Lots</a></li>
+                <li><a href= "http://10.176.1.149:58394/CityofWindsorFinal2/GarbageCollection.html"> Garbage Collection</a></li>
+                <li><a href= "http://10.176.1.149:58394/CityofWindsorFinal2/BusRoutes.html"> Bus Routes</a></li>
+                <li><a href= "http://10.176.1.149:58394/CityofWindsorFinal2/SpecialEvents.html"> Special Events</a></li>
+                <li><a href= "http://10.176.1.149:58394/CityofWindsorFinal2/Other.html"> Other</a></li>
+                
+            </ul>
+            </nav>
+            
+            
+            
+        </div>
+        </header>
+    
+<section id = "map-showcase">
+    <div class = "container">
+        <h1>CoW Web - App</h1>
+            <h2> Use Our Convinent Mapping System! </h2>
+
+    <div id="googleMap" style="width:100%;height:600px;"></div>
+        <h2> Google Maps Identifier:</h2>
+            <p> Conviniently use our google maps API in order to locate the community centre most convinient for you!</p>
+<script>
+    function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(42.3149,-83.0364),
+            zoom:14,
+};
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?AIzaSyCCqD1RqN6Egitjz8XVRZW021qX_VbkiSI&callback=myMap"></script>
+        
+    </div>
+</section>
+    
+<section id = "subscribe">
+    <div class="container">
+        <h1> Subscribe To Our Newsletter</h1>
+        <form action="Register" method="POST">
+                <input type= "text" placeholder="Username" name="username">
+                <input type= "email" placeholder="Enter Email..." name="inemail">
+                <button type="submit" class="button_1"> Subscribe</button>
+            </form>  
+    </div>
+</section>
+    
+  <!--  trial for boxed information
+<section id = "information-boxes">
+    <div class="container">
+        <div class="info-box">
+            <img src = "/images/hours.png" height="100"> 
+                <h3>Hours</h3>
+                    <p>9:30am-10:00pm</p>
+
+        </div>
+        
+        <div class="info-box">
+            <img src = "/images/dollar.jpg" height="100"> 
+                <h3>Pricing</h3>
+                    <p>$$$$$</p>
+
+        </div>
+        
+        <div class="info-box">
+            <img src = "/images/info.jpg" height="100"> 
+                <h3>Information</h3>
+                    <p>Lorem ipsum........</p>
+
+        </div>
+    </div>
+
+ 
+</section>--> 
+    
+</div>
+    <div id="contentHeader">
+    <h1>About Us</h1>
+    </div>
+<div id="details">
+    <div class="container1">
+        <div class="info-box">
+            <img src = "./images/connect.png" height="100"> 
+                <h2>Connectivity</h2>
+                    <p>A vast connective experience that allows you to access your city's information and resources and sync directly to your phone!</p>
+        </div>
+        
+        <div class="info-box">
+            <img src = "./images/UX.png" height="100"> 
+                <h2>User Experience</h2>
+                    <p>Membership: $$$$</p>
+                    <p>Community Centre membership is valid annually, providing residents to numerous facilities </p>
+
+        </div>
+        
+        <div class="info-box">
+            <img src = "./images/contact.png" height="100"> 
+                <h2>Information</h2>
+                    <p>Windsors' prestigious community centres are filled with vibrant bulding features and various events and activities for all ages. Ranging from specific programs for children, WIATC training, Special Events, and even Rental and Hosting Oppurtunities!</p>
+
+        </div>
+    
+    </div> 
+
+    
+    </div>
+    
+    
+    <footer>
+    All rights reserved to somebody &copy;
+    
+    </footer>
+    
+    
+    
+<!--   
+    <h1>CoW Information App</h1>
+
+    <main id="main">
+        <div id= "adminPosts"></div>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+    <script>src="./functions/main.js"</script>
+-->
+
+</body>
+
+    
+    
+</html>

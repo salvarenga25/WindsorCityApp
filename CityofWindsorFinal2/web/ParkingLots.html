@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/main.css" type ="text/css"/>
+    <script src="https://maps.googleapis.com/maps/api/js?AIzaSyCCqD1RqN6Egitjz8XVRZW021qX_VbkiSI&callback=myMap"></script>
+    <title>CoW Web-Based App</title>
+</head>
+    
+    
+<body>
+    <div id="wrapper"> 
+    <header>
+        <div class="container"> 
+        
+            <img src="https://www.citywindsor.ca/residents/Culture/PublishingImages/City%20Logo%20-%201%20Colour%20-%20White%20-%20JPEG.jpg" alt="logo" class="logo">
+            
+            <nav>
+            <ul>
+                <li><a href= "http://10.176.1.149:58394/CityofWindsorFinal2/Main.html"> Main</a></li>
+                <li class="current"><a href= "http://10.176.1.149:58394/CityofWindsorFinal2/CommunityCentre.html"> Community Centres</a></li>
+                <li><a href= "http://10.176.1.149:58394/CityofWindsorFinal2/ParkingLots.html"> Parking Lots</a></li>
+                <li><a href= "http://10.176.1.149:58394/CityofWindsorFinal2/GarbageCollection.html"> Garbage Collection</a></li>
+                <li><a href= "http://10.176.1.149:58394/CityofWindsorFinal2/BusRoutes.html"> Bus Routes</a></li>
+                <li><a href= "http://10.176.1.149:58394/CityofWindsorFinal2/SpecialEvents.html"> Special Events</a></li>
+                <li><a href= "http://10.176.1.149:58394/CityofWindsorFinal2/Other.html"> Other</a></li>
+                
+            </ul>
+            </nav>
+            
+            
+        </div>
+        </header>
+    
+<section id = "map-showcase">
+    <div class = "container">
+        <h1>Parking Lots</h1>
+            <h2>Locate our Convinient Parking Lots!</h2>
+
+    <div id="googleMap" style="width:100%;height:600px;"></div>
+        <h2> Google Maps Identifier:</h2>
+            <p> Conviniently use our google maps API in order to locate the parking lot most convinient for you!</p>
+        
+        
+<script>
+    function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(42.3149,-83.0364),
+            zoom:14,
+};
+        
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        
+        var markerGrandPlace = new google.maps.Marker({
+  position: new google.maps.LatLng(42.317870,-83.041940),
+  map: map,
+  title: "Parking Lot1 = 275 Pitt St. W",          
+});
+        var markerGrandPlace = new google.maps.Marker({
+  position: new google.maps.LatLng(42.315730,-83.038700),
+  map: map,
+  title: "Parking Lot2 = 406 Pelisser St"});
+        
+        var markerGrandPlace = new google.maps.Marker({
+  position: new google.maps.LatLng(42.304170,-83.063870),
+  map: map,
+  title: "Parking Lot3 = 638 Sunset Ave"});
+        
+        var markerGrandPlace = new google.maps.Marker({
+  position: new google.maps.LatLng(42.314040,-83.038320),
+  map: map,
+  title: "Parking Lot4 = 563 Pelisser St"});
+        
+        
+    
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?AIzaSyCCqD1RqN6Egitjz8XVRZW021qX_VbkiSI&callback=myMap"></script>
+        
+    </div>
+</section>
+    
+<section id = "subscribe">
+    <div class="container">
+        
+    </div>
+</section>
+    
+  <!--  trial for boxed information
+<section id = "information-boxes">
+    <div class="container">
+        <div class="info-box">
+            <img src = "/images/hours.png" height="100"> 
+                <h3>Hours</h3>
+                    <p>9:30am-10:00pm</p>
+
+        </div>
+        
+        <div class="info-box">
+            <img src = "/images/dollar.jpg" height="100"> 
+                <h3>Pricing</h3>
+                    <p>$$$$$</p>
+
+        </div>
+        
+        <div class="info-box">
+            <img src = "/images/info.jpg" height="100"> 
+                <h3>Information</h3>
+                    <p>Lorem ipsum........</p>
+
+        </div>
+    </div>
+
+ 
+</section>--> 
+    
+</div>
+<div id="details">
+    
+ 
+    <div class="container1">
+        <div class="navbar2">
+  <a class="active" href="#">Parking Lots</a>
+  <a href="#">Off-Street Lots</a>
+  <a href="#">On-Street Lots</a>
+            <div class="p_adresses">
+                <h2></h2>
+                <h3>275 Pitt St W</h3>
+                <h3>406 Pelisser St</h3>
+                <h3>638 Sunset Ave</h3>
+                <h3>563 Pelisser st</h3>
+                <h3>more addresses</h3>
+                <h3>more addresses</h3>
+                <h3>more addresses</h3>
+                <h3>more addresses</h3>
+            </div>
+            
+            
+</div>
+        <div class="info-box">
+            <img src = "./images/hours.png" height="100"> 
+                <h3>Hours*</h3>
+                    <p>The hours of operation in municipal lots are 9:00 a.m. to 6:00 p.m., Monday to Saturday. 
+Various lots have a flat fee of $2.00 from 6:00 pm to midnight.</p>
+                    <p>*Hours may vary based on location</p>
+        </div>
+        
+        <div class="info-box">
+            <img src = "./images/dollar.png" height="100"> 
+                <h3>Pricing</h3>
+                    <p>The standard rate is $1.50 per hour. For fees of $3.00 and up, credit cards are accepted in riverfront parking lots. </p>
+                    <p>Community Centre membership is valid annually, providing residents to numerous facilities </p>
+
+        </div>
+        
+        <div class="info-box">
+            <img src = "./images/info.png" height="100"> 
+                <h3>Information</h3>
+                    <p>The City operates 29 off street lots.  23 use Pay and Display machines with 2 lots utilizing parking meters. The remaining 4 lots are restricted by time limit, or to card access, City Hall visitors or permit-only parking.</p>
+
+        </div>
+    
+    </div> 
+
+    
+    </div>
+    
+    
+    <footer>
+    All rights reserved to somebody &copy;
+    
+    </footer>
+    
+    
+    
+<!--   
+    <h1>CoW Information App</h1>
+
+    <main id="main">
+        <div id= "adminPosts"></div>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+    <script>src="./functions/main.js"</script>
+-->
+
+</body>
+
+    
+    
+</html>
